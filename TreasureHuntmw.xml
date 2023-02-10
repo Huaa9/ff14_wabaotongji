@@ -124,10 +124,10 @@
                 <Condition Enabled="false" Grouping="Or" />
                 <Conditions />
               </Action>
-              <Action OrderNumber="3" NamedCallbackName="command" NamedCallbackParam="/e 当前魔纹: ${var:mwnum}" VariableOp="SetNumeric" TextAuraFontSize="9" TextAuraFontName="宋体" ActionType="NamedCallback" ExecutionDelayExpression="10">
+              <Action OrderNumber="3" NamedCallbackName="command" NamedCallbackParam="/p 当前魔纹: ${var:mwnum}" VariableOp="SetNumeric" TextAuraFontSize="9" TextAuraFontName="宋体" ActionType="NamedCallback" ExecutionDelayExpression="10">
                 <Condition Enabled="false" Grouping="Or" />
               </Action>
-              <Action OrderNumber="4" NamedCallbackName="command" NamedCallbackParam="/e 当前下底数: ${var:mw_end}" TextAuraFontSize="9" TextAuraFontName="宋体" ActionType="NamedCallback" ExecutionDelayExpression="100">
+              <Action OrderNumber="4" NamedCallbackName="command" NamedCallbackParam="/p 当前下底数: ${var:mw_end}" TextAuraFontSize="9" TextAuraFontName="宋体" ActionType="NamedCallback" ExecutionDelayExpression="100">
                 <Condition Enabled="false" Grouping="Or" />
               </Action>
             </Actions>
