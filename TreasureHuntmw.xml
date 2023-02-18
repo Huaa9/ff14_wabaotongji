@@ -14,7 +14,13 @@
               <Action OrderNumber="2" VariableOp="SetNumeric" VariableName="tb_mapnum" VariableExpression="0" TextAuraFontSize="9" TextAuraFontName="宋体" ActionType="Variable">
                 <Condition Enabled="false" Grouping="Or" />
               </Action>
-              <Action OrderNumber="3" NamedCallbackName="command" NamedCallbackParam="/e 已重置" TextAuraFontSize="9" TextAuraFontName="宋体" ActionType="NamedCallback">
+              <Action OrderNumber="3" VariableOp="SetNumeric" VariableName="mwnum" VariableExpression="0" TextAuraFontSize="9" TextAuraFontName="宋体" ActionType="Variable">
+                <Condition Enabled="false" Grouping="Or" />
+              </Action>
+              <Action OrderNumber="4" VariableOp="SetNumeric" VariableName="mw_end" VariableExpression="0" TextAuraFontSize="9" TextAuraFontName="宋体" ActionType="Variable">
+                <Condition Enabled="false" Grouping="Or" />
+              </Action>
+              <Action OrderNumber="5" NamedCallbackName="command" NamedCallbackParam="/e 已重置" TextAuraFontSize="9" TextAuraFontName="宋体" ActionType="NamedCallback">
                 <Condition Enabled="false" Grouping="Or" />
               </Action>
             </Actions>
