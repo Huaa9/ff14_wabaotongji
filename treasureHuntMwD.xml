@@ -4,7 +4,7 @@
   <ExportedFolder Name="挖宝会计不请自来" Enabled="true">
     <Folders>
       <Folder Name="基础功能 请全部勾选" Enabled="true">
-        <Folders />
+        <Folders/>
         <Triggers>
           <Trigger Enabled="true" Name="0.0手动重置" RegularExpression="^.{14} ChatLog 00:0038::金币重置$">
             <Actions>
@@ -44,7 +44,7 @@
               </Action>
             </Actions>
             <Condition Enabled="false" Grouping="Or" />
-            <Conditions />
+            <Conditions/>
           </Trigger>
           <Trigger Enabled="true" Name="2.0地图数" RegularExpression="^.{14} ChatLog 00:0839::将陷阱引来的魔物全部打倒了！$">
             <Actions>
