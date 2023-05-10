@@ -224,6 +224,7 @@
                   <ConditionSingle Enabled="true" ExpressionL="${item}" ExpressionTypeL="String" ExpressionR="绚烂华丽的羽毛" ExpressionTypeR="String" ConditionType="StringEqualCase" />
                   <ConditionSingle Enabled="true" ExpressionL="${item}" ExpressionTypeL="String" ExpressionR="惊奇纤维" ExpressionTypeR="String" ConditionType="StringEqualCase" />
                   <ConditionSingle Enabled="true" ExpressionL="${item}" ExpressionTypeL="String" ExpressionR="惊奇革" ExpressionTypeR="String" ConditionType="StringEqualCase" />
+                  <ConditionSingle Enabled="true" ExpressionL="${item}" ExpressionTypeL="String" ExpressionR="净洁布" ExpressionTypeR="String" ConditionType="StringEqualCase" />
                 </Condition>
               </Trigger>
             </Triggers>
@@ -377,15 +378,8 @@
                   <ConditionSingle Enabled="true" ExpressionL="${var:惊奇革}" ExpressionTypeL="Numeric" ExpressionR="0" ExpressionTypeR="Numeric" ConditionType="NumericGreater" />
                 </Condition>
               </Action>
-              <Action OrderNumber="25" NamedCallbackName="command" NamedCallbackParam="/e 本次掉落G15内容：开心布×${var:开心布}， 大天使×${var:大天使之翼}， 仙子族×${var:仙子族之翼}， 白伞×${var:白色花边阳伞}， 羽毛×${var:绚烂华丽的羽毛}， 惊奇纤维×${var:惊奇纤维}，惊奇革×${var:惊奇革}，净洁布×${var:净洁布}，灼热的火角×${var:灼热的火角}，惊奇补剂×${var:惊奇补剂}，迷你艾多纽斯×${var:迷你艾多纽斯}，迷你好友×${var:迷你好友}。" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="NamedCallback" ExecutionDelayExpression="10" Description="G15内容" DescriptionOverride="True">
+              <Action OrderNumber="25" NamedCallbackName="command" NamedCallbackParam="/e 本次掉落G15内容：净洁布×${var:净洁布}，灼热的火角×${var:灼热的火角}，惊奇补剂×${var:惊奇补剂}，迷你艾多纽斯×${var:迷你艾多纽斯}，迷你好友×${var:迷你好友}。" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="NamedCallback" ExecutionDelayExpression="10" Description="G15内容" DescriptionOverride="True">
                 <Condition Enabled="true" Grouping="Or">
-                  <ConditionSingle Enabled="true" ExpressionL="${var:开心布}" ExpressionTypeL="Numeric" ExpressionR="0" ExpressionTypeR="Numeric" ConditionType="NumericGreater" />
-                  <ConditionSingle Enabled="true" ExpressionL="${var:大天使之翼}" ExpressionTypeL="Numeric" ExpressionR="0" ExpressionTypeR="Numeric" ConditionType="NumericGreater" />
-                  <ConditionSingle Enabled="true" ExpressionL="${var:仙子族之翼}" ExpressionTypeL="Numeric" ExpressionR="0" ExpressionTypeR="Numeric" ConditionType="NumericGreater" />
-                  <ConditionSingle Enabled="true" ExpressionL="${var:白色花边阳伞}" ExpressionTypeL="Numeric" ExpressionR="0" ExpressionTypeR="Numeric" ConditionType="NumericGreater" />
-                  <ConditionSingle Enabled="true" ExpressionL="${var:绚烂华丽的羽毛}" ExpressionTypeL="Numeric" ExpressionR="0" ExpressionTypeR="Numeric" ConditionType="NumericGreater" />
-                  <ConditionSingle Enabled="true" ExpressionL="${var:惊奇纤维}" ExpressionTypeL="Numeric" ExpressionR="0" ExpressionTypeR="Numeric" ConditionType="NumericGreater" />
-                  <ConditionSingle Enabled="true" ExpressionL="${var:惊奇革}" ExpressionTypeL="Numeric" ExpressionR="0" ExpressionTypeR="Numeric" ConditionType="NumericGreater" />
                   <ConditionSingle Enabled="true" ExpressionL="${var:净洁布}" ExpressionTypeL="Numeric" ExpressionR="0" ExpressionTypeR="Numeric" ConditionType="NumericGreater" />
                   <ConditionSingle Enabled="true" ExpressionL="${var:灼热的火角}" ExpressionTypeL="Numeric" ExpressionR="0" ExpressionTypeR="Numeric" ConditionType="NumericGreater" />
                   <ConditionSingle Enabled="true" ExpressionL="${var:惊奇补剂}" ExpressionTypeL="Numeric" ExpressionR="0" ExpressionTypeR="Numeric" ConditionType="NumericGreater" />
@@ -415,6 +409,146 @@
                   <ConditionSingle Enabled="true" ExpressionL="${var:绚烂华丽的羽毛}" ExpressionTypeL="Numeric" ExpressionR="0" ExpressionTypeR="Numeric" ConditionType="NumericEqual" />
                   <ConditionSingle Enabled="true" ExpressionL="${var:惊奇纤维}" ExpressionTypeL="Numeric" ExpressionR="0" ExpressionTypeR="Numeric" ConditionType="NumericEqual" />
                   <ConditionSingle Enabled="true" ExpressionL="${var:惊奇革}" ExpressionTypeL="Numeric" ExpressionR="0" ExpressionTypeR="Numeric" ConditionType="NumericEqual" />
+                  <ConditionSingle Enabled="true" ExpressionL="${var:净洁布}" ExpressionTypeL="Numeric" ExpressionR="0" ExpressionTypeR="Numeric" ConditionType="NumericEqual" />
+                  <ConditionSingle Enabled="true" ExpressionL="${var:灼热的火角}" ExpressionTypeL="Numeric" ExpressionR="0" ExpressionTypeR="Numeric" ConditionType="NumericEqual" />
+                  <ConditionSingle Enabled="true" ExpressionL="${var:惊奇补剂}" ExpressionTypeL="Numeric" ExpressionR="0" ExpressionTypeR="Numeric" ConditionType="NumericEqual" />
+                  <ConditionSingle Enabled="true" ExpressionL="${var:迷你艾多纽斯}" ExpressionTypeL="Numeric" ExpressionR="0" ExpressionTypeR="Numeric" ConditionType="NumericEqual" />
+                  <ConditionSingle Enabled="true" ExpressionL="${var:迷你好友}" ExpressionTypeL="Numeric" ExpressionR="0" ExpressionTypeR="Numeric" ConditionType="NumericEqual" />
+                </Condition>
+              </Action>
+            </Actions>
+            <Condition Enabled="false" Grouping="Or" />
+          </Trigger>
+          <Trigger Enabled="true" Name="6.2用于小队的掉落查询" RegularExpression="^.{14} ChatLog 00:000E:.*:(掉落(查询|统计)|挖宝(查询|统计))$">
+            <Actions>
+              <Action OrderNumber="1" VariableOp="SetNumeric" VariableName="纳夏薄绢" VariableExpression="${var:纳夏薄绢} + 0" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="Variable">
+                <Condition Enabled="false" Grouping="Or" />
+              </Action>
+              <Action OrderNumber="2" VariableOp="SetNumeric" VariableName="深层传送魔纹的地图" VariableExpression="${var:深层传送魔纹的地图} + 0" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="Variable">
+                <Condition Enabled="false" Grouping="Or" />
+              </Action>
+              <Action OrderNumber="3" VariableOp="SetNumeric" VariableName="附魔榆木木材" VariableExpression="${var:附魔榆木木材} + 0" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="Variable">
+                <Condition Enabled="false" Grouping="Or" />
+              </Action>
+              <Action OrderNumber="4" VariableOp="SetNumeric" VariableName="小牛皮" VariableExpression="${var:小牛皮} + 0" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="Variable">
+                <Condition Enabled="false" Grouping="Or" />
+              </Action>
+              <Action OrderNumber="5" VariableOp="SetNumeric" VariableName="前沿布料" VariableExpression="${var:前沿布料} + 0" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="Variable">
+                <Condition Enabled="false" Grouping="Or" />
+              </Action>
+              <Action OrderNumber="6" VariableOp="SetNumeric" VariableName="古菩台灯" VariableExpression="${var:古菩台灯} + 0" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="Variable">
+                <Condition Enabled="false" Grouping="Or" />
+              </Action>
+              <Action OrderNumber="7" VariableOp="SetNumeric" VariableName="黄金大河狸" VariableExpression="${var:黄金大河狸} + 0" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="Variable">
+                <Condition Enabled="false" Grouping="Or" />
+              </Action>
+              <Action OrderNumber="8" VariableOp="SetNumeric" VariableName="金鲶" VariableExpression="${var:金鲶} + 0" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="Variable">
+                <Condition Enabled="false" Grouping="Or" />
+              </Action>
+              <Action OrderNumber="9" VariableOp="SetNumeric" VariableName="开心布" VariableExpression="${var:开心布} + 0" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="Variable">
+                <Condition Enabled="false" Grouping="Or" />
+              </Action>
+              <Action OrderNumber="10" VariableOp="SetNumeric" VariableName="大天使之翼" VariableExpression="${var:大天使之翼} + 0" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="Variable">
+                <Condition Enabled="false" Grouping="Or" />
+              </Action>
+              <Action OrderNumber="11" VariableOp="SetNumeric" VariableName="仙子族之翼" VariableExpression="${var:仙子族之翼} + 0" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="Variable">
+                <Condition Enabled="false" Grouping="Or" />
+              </Action>
+              <Action OrderNumber="12" VariableOp="SetNumeric" VariableName="白色花边阳伞" VariableExpression="${var:白色花边阳伞} + 0" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="Variable">
+                <Condition Enabled="false" Grouping="Or" />
+              </Action>
+              <Action OrderNumber="13" VariableOp="SetNumeric" VariableName="绚烂华丽的羽毛" VariableExpression="${var:绚烂华丽的羽毛} + 0" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="Variable">
+                <Condition Enabled="false" Grouping="Or" />
+              </Action>
+              <Action OrderNumber="14" VariableOp="SetNumeric" VariableName="惊奇纤维" VariableExpression="${var:惊奇纤维} + 0" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="Variable">
+                <Condition Enabled="false" Grouping="Or" />
+              </Action>
+              <Action OrderNumber="15" VariableOp="SetNumeric" VariableName="惊奇革" VariableExpression="${var:惊奇革} + 0" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="Variable">
+                <Condition Enabled="false" Grouping="Or" />
+              </Action>
+              <Action OrderNumber="16" VariableOp="SetNumeric" VariableName="净洁布" VariableExpression="${var:净洁布} + 0" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="Variable">
+                <Condition Enabled="false" Grouping="Or" />
+              </Action>
+              <Action OrderNumber="17" VariableOp="SetNumeric" VariableName="灼热的火角" VariableExpression="${var:灼热的火角} + 0" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="Variable">
+                <Condition Enabled="false" Grouping="Or" />
+              </Action>
+              <Action OrderNumber="18" VariableOp="SetNumeric" VariableName="惊奇补剂" VariableExpression="${var:惊奇补剂} + 0" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="Variable">
+                <Condition Enabled="false" Grouping="Or" />
+              </Action>
+              <Action OrderNumber="19" VariableOp="SetNumeric" VariableName="迷你艾多纽斯" VariableExpression="${var:迷你艾多纽斯} + 0" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="Variable">
+                <Condition Enabled="false" Grouping="Or" />
+              </Action>
+              <Action OrderNumber="20" VariableOp="SetNumeric" VariableName="迷你好友" VariableExpression="${var:迷你好友} + 0" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="Variable">
+                <Condition Enabled="false" Grouping="Or" />
+              </Action>
+              <Action OrderNumber="21" NamedCallbackName="command" NamedCallbackParam="/p 本次掉落G10内容：纳夏薄绢×${var:纳夏薄绢}， 绿图×${var:深层传送魔纹的地图}。" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="NamedCallback" ExecutionDelayExpression="40" Description="G10内容" DescriptionOverride="True">
+                <Condition Enabled="true" Grouping="Or">
+                  <ConditionSingle Enabled="true" ExpressionL="${var:纳夏薄绢}" ExpressionTypeL="Numeric" ExpressionR="0" ExpressionTypeR="Numeric" ConditionType="NumericGreater" />
+                  <ConditionSingle Enabled="true" ExpressionL="${var:深层传送魔纹的地图}" ExpressionTypeL="Numeric" ExpressionR="0" ExpressionTypeR="Numeric" ConditionType="NumericGreater" />
+                </Condition>
+              </Action>
+              <Action OrderNumber="22" NamedCallbackName="command" NamedCallbackParam="/p 本次掉落G12内容：附魔木×${var:附魔榆木木材}， 小牛皮×${var:小牛皮}， 前沿×${var:前沿布料}。" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="NamedCallback" ExecutionDelayExpression="40" Description="G12内容" DescriptionOverride="True">
+                <Condition Enabled="true" Grouping="Or">
+                  <ConditionSingle Enabled="true" ExpressionL="${var:附魔榆木木材}" ExpressionTypeL="Numeric" ExpressionR="0" ExpressionTypeR="Numeric" ConditionType="NumericGreater" />
+                  <ConditionSingle Enabled="true" ExpressionL="${var:小牛皮}" ExpressionTypeL="Numeric" ExpressionR="0" ExpressionTypeR="Numeric" ConditionType="NumericGreater" />
+                  <ConditionSingle Enabled="true" ExpressionL="${var:前沿布料}" ExpressionTypeL="Numeric" ExpressionR="0" ExpressionTypeR="Numeric" ConditionType="NumericGreater" />
+                </Condition>
+              </Action>
+              <Action OrderNumber="23" NamedCallbackName="command" NamedCallbackParam="/p 本次掉落G12极稀有内容：古菩灯×${var:古菩台灯}， 河狸×${var:黄金大河狸}。" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="NamedCallback" ExecutionDelayExpression="40" Description="G12极稀有内容" DescriptionOverride="True">
+                <Condition Enabled="true" Grouping="Or">
+                  <ConditionSingle Enabled="true" ExpressionL="${var:古菩台灯}" ExpressionTypeL="Numeric" ExpressionR="0" ExpressionTypeR="Numeric" ConditionType="NumericGreater" />
+                  <ConditionSingle Enabled="true" ExpressionL="${var:黄金大河狸}" ExpressionTypeL="Numeric" ExpressionR="0" ExpressionTypeR="Numeric" ConditionType="NumericGreater" />
+                </Condition>
+              </Action>
+              <Action OrderNumber="24" NamedCallbackName="command" NamedCallbackParam="/p 本次掉落G14内容：开心布×${var:开心布}， 大天使×${var:大天使之翼}， 仙子族×${var:仙子族之翼}， 白伞×${var:白色花边阳伞}， 羽毛×${var:绚烂华丽的羽毛}， 惊奇纤维×${var:惊奇纤维}。" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="NamedCallback" ExecutionDelayExpression="40" Description="G14内容" DescriptionOverride="True">
+                <Condition Enabled="true" Grouping="Or">
+                  <ConditionSingle Enabled="true" ExpressionL="${var:开心布}" ExpressionTypeL="Numeric" ExpressionR="0" ExpressionTypeR="Numeric" ConditionType="NumericGreater" />
+                  <ConditionSingle Enabled="true" ExpressionL="${var:大天使之翼}" ExpressionTypeL="Numeric" ExpressionR="0" ExpressionTypeR="Numeric" ConditionType="NumericGreater" />
+                  <ConditionSingle Enabled="true" ExpressionL="${var:仙子族之翼}" ExpressionTypeL="Numeric" ExpressionR="0" ExpressionTypeR="Numeric" ConditionType="NumericGreater" />
+                  <ConditionSingle Enabled="true" ExpressionL="${var:白色花边阳伞}" ExpressionTypeL="Numeric" ExpressionR="0" ExpressionTypeR="Numeric" ConditionType="NumericGreater" />
+                  <ConditionSingle Enabled="true" ExpressionL="${var:绚烂华丽的羽毛}" ExpressionTypeL="Numeric" ExpressionR="0" ExpressionTypeR="Numeric" ConditionType="NumericGreater" />
+                  <ConditionSingle Enabled="true" ExpressionL="${var:惊奇纤维}" ExpressionTypeL="Numeric" ExpressionR="0" ExpressionTypeR="Numeric" ConditionType="NumericGreater" />
+                  <ConditionSingle Enabled="true" ExpressionL="${var:惊奇革}" ExpressionTypeL="Numeric" ExpressionR="0" ExpressionTypeR="Numeric" ConditionType="NumericGreater" />
+                </Condition>
+              </Action>
+              <Action OrderNumber="25" NamedCallbackName="command" NamedCallbackParam="/e 本次掉落G15内容：开心布×${var:开心布}， 大天使×${var:大天使之翼}， 仙子族×${var:仙子族之翼}， 白伞×${var:白色花边阳伞}， 羽毛×${var:绚烂华丽的羽毛}， 惊奇纤维×${var:惊奇纤维}，惊奇革×${var:惊奇革}，净洁布×${var:净洁布}，灼热的火角×${var:灼热的火角}，惊奇补剂×${var:惊奇补剂}，迷你艾多纽斯×${var:迷你艾多纽斯}，迷你好友×${var:迷你好友}。" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="NamedCallback" ExecutionDelayExpression="10" Description="G15内容" DescriptionOverride="True">
+                <Condition Enabled="true" Grouping="Or">
+                  <ConditionSingle Enabled="true" ExpressionL="${var:开心布}" ExpressionTypeL="Numeric" ExpressionR="0" ExpressionTypeR="Numeric" ConditionType="NumericGreater" />
+                  <ConditionSingle Enabled="true" ExpressionL="${var:大天使之翼}" ExpressionTypeL="Numeric" ExpressionR="0" ExpressionTypeR="Numeric" ConditionType="NumericGreater" />
+                  <ConditionSingle Enabled="true" ExpressionL="${var:仙子族之翼}" ExpressionTypeL="Numeric" ExpressionR="0" ExpressionTypeR="Numeric" ConditionType="NumericGreater" />
+                  <ConditionSingle Enabled="true" ExpressionL="${var:白色花边阳伞}" ExpressionTypeL="Numeric" ExpressionR="0" ExpressionTypeR="Numeric" ConditionType="NumericGreater" />
+                  <ConditionSingle Enabled="true" ExpressionL="${var:绚烂华丽的羽毛}" ExpressionTypeL="Numeric" ExpressionR="0" ExpressionTypeR="Numeric" ConditionType="NumericGreater" />
+                  <ConditionSingle Enabled="true" ExpressionL="${var:惊奇纤维}" ExpressionTypeL="Numeric" ExpressionR="0" ExpressionTypeR="Numeric" ConditionType="NumericGreater" />
+                  <ConditionSingle Enabled="true" ExpressionL="${var:惊奇革}" ExpressionTypeL="Numeric" ExpressionR="0" ExpressionTypeR="Numeric" ConditionType="NumericGreater" />
+                  <ConditionSingle Enabled="true" ExpressionL="${var:净洁布}" ExpressionTypeL="Numeric" ExpressionR="0" ExpressionTypeR="Numeric" ConditionType="NumericGreater" />
+                  <ConditionSingle Enabled="true" ExpressionL="${var:灼热的火角}" ExpressionTypeL="Numeric" ExpressionR="0" ExpressionTypeR="Numeric" ConditionType="NumericGreater" />
+                  <ConditionSingle Enabled="true" ExpressionL="${var:惊奇补剂}" ExpressionTypeL="Numeric" ExpressionR="0" ExpressionTypeR="Numeric" ConditionType="NumericGreater" />
+                  <ConditionSingle Enabled="true" ExpressionL="${var:迷你艾多纽斯}" ExpressionTypeL="Numeric" ExpressionR="0" ExpressionTypeR="Numeric" ConditionType="NumericGreater" />
+                  <ConditionSingle Enabled="true" ExpressionL="${var:迷你好友}" ExpressionTypeL="Numeric" ExpressionR="0" ExpressionTypeR="Numeric" ConditionType="NumericGreater" />
+                </Condition>
+              </Action>
+              <Action OrderNumber="26" NamedCallbackName="command" NamedCallbackParam="/p 本次掉落绿图内容：金鲶×${var:金鲶}。" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="NamedCallback" ExecutionDelayExpression="40" Description="绿图内容" DescriptionOverride="True">
+                <Condition Enabled="true" Grouping="Or">
+                  <ConditionSingle Enabled="true" ExpressionL="${var:金鲶}" ExpressionTypeL="Numeric" ExpressionR="0" ExpressionTypeR="String" ConditionType="NumericGreater" />
+                </Condition>
+              </Action>
+              <Action OrderNumber="27" NamedCallbackName="command" NamedCallbackParam="/p 似乎还没有值钱的掉落物…" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="NamedCallback" ExecutionDelayExpression="40" Description="无掉落" DescriptionOverride="True">
+                <Condition Enabled="true" Grouping="And">
+                  <ConditionSingle Enabled="true" ExpressionL="${var:金鲶}" ExpressionTypeL="Numeric" ExpressionR="0" ExpressionTypeR="Numeric" ConditionType="NumericEqual" />
+                  <ConditionSingle Enabled="true" ExpressionL="${var:小牛皮}" ExpressionTypeL="Numeric" ExpressionR="0" ExpressionTypeR="Numeric" ConditionType="NumericEqual" />
+                  <ConditionSingle Enabled="true" ExpressionL="${var:附魔榆木木材}" ExpressionTypeL="Numeric" ExpressionR="0" ExpressionTypeR="Numeric" ConditionType="NumericEqual" />
+                  <ConditionSingle Enabled="true" ExpressionL="${var:古菩台灯}" ExpressionTypeL="Numeric" ExpressionR="0" ExpressionTypeR="Numeric" ConditionType="NumericEqual" />
+                  <ConditionSingle Enabled="true" ExpressionL="${var:纳夏薄绢}" ExpressionTypeL="Numeric" ExpressionR="0" ExpressionTypeR="Numeric" ConditionType="NumericEqual" />
+                  <ConditionSingle Enabled="true" ExpressionL="${var:前沿布料}" ExpressionTypeL="Numeric" ExpressionR="0" ExpressionTypeR="Numeric" ConditionType="NumericEqual" />
+                  <ConditionSingle Enabled="true" ExpressionL="${var:深层传送魔纹的地图}" ExpressionTypeL="Numeric" ExpressionR="0" ExpressionTypeR="Numeric" ConditionType="NumericEqual" />
+                  <ConditionSingle Enabled="true" ExpressionL="${var:黄金大河狸}" ExpressionTypeL="Numeric" ExpressionR="0" ExpressionTypeR="Numeric" ConditionType="NumericEqual" />
+                  <ConditionSingle Enabled="true" ExpressionL="${var:开心布}" ExpressionTypeL="Numeric" ExpressionR="0" ExpressionTypeR="Numeric" ConditionType="NumericEqual" />
+                  <ConditionSingle Enabled="true" ExpressionL="${var:大天使之翼}" ExpressionTypeL="Numeric" ExpressionR="0" ExpressionTypeR="Numeric" ConditionType="NumericEqual" />
+                  <ConditionSingle Enabled="true" ExpressionL="${var:仙子族之翼}" ExpressionTypeL="Numeric" ExpressionR="0" ExpressionTypeR="Numeric" ConditionType="NumericEqual" />
+                  <ConditionSingle Enabled="true" ExpressionL="${var:白色花边阳伞}" ExpressionTypeL="Numeric" ExpressionR="0" ExpressionTypeR="Numeric" ConditionType="NumericEqual" />
+                  <ConditionSingle Enabled="true" ExpressionL="${var:绚烂华丽的羽毛}" ExpressionTypeL="Numeric" ExpressionR="0" ExpressionTypeR="Numeric" ConditionType="NumericEqual" />
+                  <ConditionSingle Enabled="true" ExpressionL="${var:惊奇纤维}" ExpressionTypeL="Numeric" ExpressionR="0" ExpressionTypeR="Numeric" ConditionType="NumericEqual" />
+                  <ConditionSingle Enabled="true" ExpressionL="${var:惊奇革}" ExpressionTypeL="Numeric" ExpressionR="0" ExpressionTypeR="Numeric" ConditionType="NumericGreater" />
                   <ConditionSingle Enabled="true" ExpressionL="${var:净洁布}" ExpressionTypeL="Numeric" ExpressionR="0" ExpressionTypeR="Numeric" ConditionType="NumericEqual" />
                   <ConditionSingle Enabled="true" ExpressionL="${var:灼热的火角}" ExpressionTypeL="Numeric" ExpressionR="0" ExpressionTypeR="Numeric" ConditionType="NumericEqual" />
                   <ConditionSingle Enabled="true" ExpressionL="${var:惊奇补剂}" ExpressionTypeL="Numeric" ExpressionR="0" ExpressionTypeR="Numeric" ConditionType="NumericEqual" />
