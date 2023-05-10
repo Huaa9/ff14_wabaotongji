@@ -44,6 +44,7 @@
               </Action>
             </Actions>
             <Condition Enabled="false" Grouping="Or" />
+          </Trigger>
           <Trigger Enabled="true" Name="2.0地图数" RegularExpression="^.{14} ChatLog 00:0839::将陷阱引来的魔物全部打倒了！$">
             <Actions>
               <Action OrderNumber="1" VariableOp="SetNumeric" VariableName="tb_mapnum" VariableExpression="${var:tb_mapnum}+1" TextAuraFontSize="9" TextAuraFontName="宋体" ActionType="Variable">
@@ -54,7 +55,6 @@
               </Action>
             </Actions>
             <Condition Enabled="false" Grouping="Or" />
-          </Trigger>
           </Trigger>
           <Trigger Enabled="true" Name="2.1绿图地图数" RegularExpression="^.{14} ChatLog 00:0839::“运河宝物库深层”任务开始。$">
             <Actions>
