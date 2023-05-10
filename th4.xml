@@ -270,7 +270,7 @@
                 </Actions>
                 <Condition Enabled="true" Grouping="Or">
                   <ConditionSingle Enabled="true" ExpressionL="${item}" ExpressionTypeL="String" ExpressionR="金鲶" ExpressionTypeR="String" ConditionType="StringEqualCase" />
-                </Condition
+                </Condition>
               </Trigger>
             </Triggers>
           </Folder>
