@@ -228,7 +228,7 @@
               </Trigger>
             </Triggers>
           </Folder>
-          <Folder FFXIVZoneFilterEnabled="True" FfxivZoneFilterRegularExpression="^95[6-9]|96[0-1]|1000$" Name="G15掉落统计内核" Enabled="true">
+          <Folder FFXIVZoneFilterEnabled="True" FfxivZoneFilterRegularExpression="^961|1123$" Name="G15掉落统计内核" Enabled="true">
             <Folders />
             <Triggers>
               <Trigger Enabled="true" Name="G15_总计掉落" RegularExpression="^.{14} ChatLog 00:0039::获得了新的战利品(?&lt;item&gt;.+?)×?(?&lt;count&gt;\d{1,4})?。$">
