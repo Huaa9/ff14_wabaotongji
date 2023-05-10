@@ -36,14 +36,12 @@
           </Trigger>
           <Trigger Enabled="true" Name="1.0记录金币" RegularExpression="^.{14} ChatLog 00:003E::获得了(?&lt;gold0&gt;[\d,]+)金币。$">
             <Actions>
-              <Action OrderNumber="1" VariableOp="SetNumeric" VariableName="tb_mapnum" VariableExpression="${var:tb_mapnum}+1" TextAuraFontSize="9" TextAuraFontName="宋体" ActionType="Variable">
-                <Condition Enabled="false" Grouping="Or" />
-              </Action>
-              <Action OrderNumber="2" NamedCallbackName="command" NamedCallbackParam="/e 当前地图数: ${var:tb_mapnum}" TextAuraFontSize="9" TextAuraFontName="宋体" ActionType="NamedCallback" ExecutionDelayExpression="100">
+              <Action OrderNumber="1" VariableOp="SetNumeric" VariableName="tb_money" VariableExpression="${var:tb_money}+${func:format(System.Double,&quot;g&quot;):${gold0}}" TextAuraFontSize="9" TextAuraFontName="宋体" ActionType="Variable">
                 <Condition Enabled="false" Grouping="Or" />
               </Action>
             </Actions>
             <Condition Enabled="false" Grouping="Or" />
+            <Conditions />
           </Trigger>
           <Trigger Enabled="true" Name="2.0地图数" RegularExpression="^.{14} ChatLog 00:0839::将陷阱引来的魔物全部打倒了！$">
             <Actions>
